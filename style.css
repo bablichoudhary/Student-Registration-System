@@ -27,7 +27,7 @@
     }
     form{
         width: 40%;
-        margin-left: 10%;
+        margin-left: 5%;
         padding: 10px;
     }
     form label {
@@ -68,12 +68,17 @@
       }
 
       .showList{
-        width: 40%;
+       
+        max-width: auto;
+        max-height: 200px;
+        overflow-x: auto;
+        overflow-y: auto;
       }
      table{
         width: 100%;
         padding: 5px;
         border-collapse: collapse;  
+      
        
      }
       h2{
@@ -87,6 +92,7 @@
         color: #4e01f4;
         padding: 10px;
         text-align: left;
+       
       
         
       }
@@ -147,3 +153,41 @@ footer ul li{
 
 }
 
+/* reponsive for mobile devices */
+
+@media (max-width:480px){
+  .Registration{
+    display: flex;
+    flex-direction: column;
+}
+h1
+{
+  margin:2px;
+  font-size: 1.5em;
+
+}
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button{
+  width: 100%;
+  margin-top: 5px;
+}
+.showList{
+       
+  max-width: 300px;
+  max-height: auto;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+h2{
+ text-align: justify;
+}
+footer{
+  margin-top: 5px;
+}
+}
